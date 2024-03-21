@@ -13,8 +13,8 @@ typedef struct{
 
 
 corredor INGRESAR_DATOS (corredor persona);
-void PROCESAR_DATOS (corredor persona[], int cant);
-void MOSTRAR_DATOS (corredor persona[], int cant);
+void PROCESAR_DATOS (corredor persona[], int cantidad);
+void MOSTRAR_DATOS (corredor persona[], int cantidad);
 void MOSTRAR_OPCIONES (void);
 
 
