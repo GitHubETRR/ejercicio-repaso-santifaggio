@@ -19,10 +19,14 @@ void MOSTRAR_OPCIONES (void);
 
 
 int main (void){
+    
+    
     corredor persona [CANT_CORREDORES];
     for (int i=0; i<CANT_CORREDORES; i++)
-        persona [i].titulos=0
+        persona [i].titulos=0;
     }
+    
+    
     unsigned int corredoresIngresados=0;
     printf("menu");
     int opcionElegida;
@@ -75,7 +79,7 @@ void PROCESAR_DATOS (corredor persona[], int cantidad){
         if (persona[i].titulos>persona[maximo].titulos){
             maximo=i;
         }
-        promedio+=persona[i].salario;
+        promedio+=persona[i].titulos;
     }
     promedio/=cantidad;
     printf("%s tiene la max cantidad de titulos de rally con: %i" , persona[maximo].nombre, persona [maximo].titulos);   
@@ -88,7 +92,6 @@ void MOSTRAR_DATOS(corredor persona[], int cantidad){
         printf("%i NOMBRE: %s, NACIONALIDAD: %s, SALARIO: %i", i+1, persona [i].nombre, persona[i].nacionalidad, persona[i].salario );
     }
 }
-
 
 
 
